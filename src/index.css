@@ -1,0 +1,18 @@
+/* filepath: src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-secondary font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-surface bg-opacity-90 backdrop-blur-lg border border-gray-200 shadow-sm rounded-2xl;
+  }
+}
